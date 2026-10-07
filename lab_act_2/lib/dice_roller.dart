@@ -4,7 +4,7 @@ class DiceRoller extends StatefulWidget{
   const DiceRoller({super.key});
 
 @override
-  State<DiceRoller>
+  void State<DiceRoller>
 
 
 }

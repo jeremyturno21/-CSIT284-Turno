@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'colorful_text.dart';
 
-class MainContainer extends StatelessWidget {
-  const MainContainer({super.key});
+class GradientContainer extends StatelessWidget {
+  const GradientContainer({super.key, required this.child});
+
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +18,8 @@ class MainContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(
-        child: ColorfulText(),
+      child: Center(
+        child: child,
       ),
     );
   }
